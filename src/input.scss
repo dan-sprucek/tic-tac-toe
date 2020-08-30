@@ -1,0 +1,73 @@
+$size: 60px;
+$mainColor: #299294;
+$secondaryColor: #E71989;
+$fontColor: #E7ECEF;
+
+body {
+    background-color: $mainColor;
+    color: $fontColor;
+    text-align: center;
+}
+
+button {
+    background-color: $secondaryColor;
+    color: $fontColor;
+    font-size: $size / 3;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: stretch;
+    width: 3 * $size;
+    height: $size
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $fontColor;
+    width: 100%;
+    font-weight: bold;
+    font-size: $size / 2;
+    background-color: $secondaryColor
+
+}
+
+.scoreHeadline {
+    width: 3 * $size;
+    text-align: center;
+}
+
+.score {
+    width: 3 * $size;
+    text-align: center;
+    font-size: $size / 2;
+    font-weight: bold;
+}
+
+.winning {
+    text-shadow: 0px 0px 8px green;
+}
+
+.losing {
+    text-shadow: 0px 0px 8px red;
+}
+
+.resultContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
