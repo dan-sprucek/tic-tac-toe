@@ -56,8 +56,7 @@ const App = () => {
         setOSelected([])
         setInPlay(true)
         setWinner('')
-        let cells = document.querySelectorAll('div.cell')
-        cells.forEach(cell => cell.innerHTML = '')
+        document.querySelectorAll('div.cell').forEach(cell => cell.innerHTML = '')
     }
     
     return (
